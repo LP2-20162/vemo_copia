@@ -17,8 +17,7 @@ from rest_framework import status
 from vemo_service_apps.utils.security import log_params
 from vemo_service_apps.utils.permissions import ModelPermission
 
-from vemo_service_apps
-.auths.models.user import User
+from vemo_service_apps.auths.models.user import User
 # Get an instance of a logger
 log = logging.getLogger(__name__)
 
