@@ -1,6 +1,7 @@
 ﻿var baseUrl = 'http://localhost:9000/';
 var loginUrl = 'http://localhost:9001/auth_web/';
 var vemoUrl = 'http://localhost:9001/vemo_web/';
+"S"
 
 
 var clientId = '1mDR3zdKmNxeMHoqSJfOfX4JBwSvw93zRK2GaZ61';
