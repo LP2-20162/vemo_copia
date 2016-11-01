@@ -3,6 +3,7 @@ var loginUrl = 'http://localhost:9001/auth_web/';
 var vemoUrl = 'http://localhost:9001/vemo_web/';
 
 
+
 var clientId = '1mDR3zdKmNxeMHoqSJfOfX4JBwSvw93zRK2GaZ61';
 var clientSecret = 'dYdgBysUnR4hr3JpREHPyVsUnVw42uGgyIoc3ThsYI1pQOhKuGNhIuYe2Oc0ClPSNMhR3WFEO33uaISItfigJLPkAh22JpBkBABOQbaQuhhnTDBKVmNnEfTm6q2km3u4';
 var grantType = 'password';
