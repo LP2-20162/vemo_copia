@@ -1,0 +1,575 @@
+[2016-11-02 08:11:02] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2016-11-02 08:11:02] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2016-11-02 08:15:40] WARNING [django.request:182] Not Found: /
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\\\vemo_vent\\\\ve_vemo\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'D:\\\\vemo_vent\\\\ve_vemo\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\\\vemo_vent\\\\ve_vemo\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\\\vemo_vent\\\\vemo_service\\\\vemo_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\\\vemo_vent\\\\vemo_service\\\\vemo_service_apps\\\\catalogo_api\\\\urls.py'> (None:None) ^api/catalogo/>"
+[2016-11-02 08:15:40] WARNING [django.request:182] Not Found: /favicon.ico
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\\\vemo_vent\\\\ve_vemo\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'D:\\\\vemo_vent\\\\ve_vemo\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\\\vemo_vent\\\\ve_vemo\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\\\vemo_vent\\\\vemo_service\\\\vemo_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2016-11-02 08:15:40] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'D:\\vemo_vent\\ve_vemo\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'vemo_service_apps.auths_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\vemo_vent\\vemo_service\\vemo_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'vemo_service_apps.catalogo_api.urls' from 'D:\\\\vemo_vent\\\\vemo_service\\\\vemo_service_apps\\\\catalogo_api\\\\urls.py'> (None:None) ^api/catalogo/>"
+[2016-11-02 08:16:44] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '9mcbs6p4fi51ko6lu4765ku1fzab7r87' AND "django_session"."expire_date" > '2016-11-02 13:16:44.706394'); args=('9mcbs6p4fi51ko6lu4765ku1fzab7r87', '2016-11-02 13:16:44.706394')
+[2016-11-02 08:16:44] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'False': False, 'True': True, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x03E67330>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x03EF7410>>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03EF7330>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'INFO': 20, 'ERROR': 40, 'WARNING': 30, 'DEBUG': 10}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x03EA5C00>>}, {}, {'next': '/admin/', 'has_permission': False, 'site_name': '127.0.0.1:9000', 'title': 'Log in', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'site_url': '/', 'available_apps': [], 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F17B90>, 'LANGUAGE_BIDI': False, 'app_path': '/admin/login/?next=/admin/', 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F17C50>, 'LANGUAGE_CODE': 'en-us', 'site': <django.contrib.sites.requests.RequestSite object at 0x03EF7510>}]"
+[2016-11-02 08:16:44] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'False': False, 'True': True, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x03E67330>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x03EF7410>>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03EF7330>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'INFO': 20, 'ERROR': 40, 'WARNING': 30, 'DEBUG': 10}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x03EA5C00>>}, {}, {'next': '/admin/', 'has_permission': False, 'site_name': '127.0.0.1:9000', 'title': 'Log in', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'site_url': '/', 'available_apps': [], 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F17B90>, 'LANGUAGE_BIDI': False, 'app_path': '/admin/login/?next=/admin/', 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F17C50>, 'LANGUAGE_CODE': 'en-us', 'site': <django.contrib.sites.requests.RequestSite object at 0x03EF7510>}]"
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."username" = 'admin'; args=('admin',)
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '729drj5x797qs4cu59c0f4oreluiz4lm' LIMIT 1; args=('729drj5x797qs4cu59c0f4oreluiz4lm',)
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '729drj5x797qs4cu59c0f4oreluiz4lm', 'MWM0OGIyODQ4NzI4MzRhZjAyMjIxNmY1YzZlNzUwYmUzNTU2OWFjMTp7fQ==', '2016-11-16 13:16:46.381903'; args=('729drj5x797qs4cu59c0f4oreluiz4lm', 'MWM0OGIyODQ4NzI4MzRhZjAyMjIxNmY1YzZlNzUwYmUzNTU2OWFjMTp7fQ==', '2016-11-16 13:16:46.381903')
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '729drj5x797qs4cu59c0f4oreluiz4lm'; args=('729drj5x797qs4cu59c0f4oreluiz4lm',)
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('729drj5x797qs4cu59c0f4oreluiz4lm'); args=('729drj5x797qs4cu59c0f4oreluiz4lm',)
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.002) UPDATE "auths_user" SET "last_login" = '2016-11-02 13:16:46.628263' WHERE "auths_user"."id" = '98c929be19fb4598b30233dd1ddbfcfd'; args=('2016-11-02 13:16:46.628263', '98c929be19fb4598b30233dd1ddbfcfd')
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'M2QyOGQ1NDk0MTBhMThiM2EwYjY3NDY0MmQzNTExNWJiYTcwMjkyMTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiODdmYzc1ZGEyNGRhZWMyN2YwZTExNzk4NjEzNjJjMWEwOWJlYjZhMSIsIl9hdXRoX3VzZXJfaWQiOiI5OGM5MjliZS0xOWZiLTQ1OTgtYjMwMi0zM2RkMWRkYmZjZmQifQ==', "expire_date" = '2016-11-16 13:16:46.684298' WHERE "django_session"."session_key" = '729drj5x797qs4cu59c0f4oreluiz4lm'; args=('M2QyOGQ1NDk0MTBhMThiM2EwYjY3NDY0MmQzNTExNWJiYTcwMjkyMTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiODdmYzc1ZGEyNGRhZWMyN2YwZTExNzk4NjEzNjJjMWEwOWJlYjZhMSIsIl9hdXRoX3VzZXJfaWQiOiI5OGM5MjliZS0xOWZiLTQ1OTgtYjMwMi0zM2RkMWRkYmZjZmQifQ==', '2016-11-16 13:16:46.684298', '729drj5x797qs4cu59c0f4oreluiz4lm')
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '729drj5x797qs4cu59c0f4oreluiz4lm', 'M2QyOGQ1NDk0MTBhMThiM2EwYjY3NDY0MmQzNTExNWJiYTcwMjkyMTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiODdmYzc1ZGEyNGRhZWMyN2YwZTExNzk4NjEzNjJjMWEwOWJlYjZhMSIsIl9hdXRoX3VzZXJfaWQiOiI5OGM5MjliZS0xOWZiLTQ1OTgtYjMwMi0zM2RkMWRkYmZjZmQifQ==', '2016-11-16 13:16:46.684298'; args=('729drj5x797qs4cu59c0f4oreluiz4lm', 'M2QyOGQ1NDk0MTBhMThiM2EwYjY3NDY0MmQzNTExNWJiYTcwMjkyMTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiODdmYzc1ZGEyNGRhZWMyN2YwZTExNzk4NjEzNjJjMWEwOWJlYjZhMSIsIl9hdXRoX3VzZXJfaWQiOiI5OGM5MjliZS0xOWZiLTQ1OTgtYjMwMi0zM2RkMWRkYmZjZmQifQ==', '2016-11-16 13:16:46.684298')
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '729drj5x797qs4cu59c0f4oreluiz4lm' AND "django_session"."expire_date" > '2016-11-02 13:16:46.780466'); args=('729drj5x797qs4cu59c0f4oreluiz4lm', '2016-11-02 13:16:46.780466')
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."id" = '98c929be19fb4598b30233dd1ddbfcfd'; args=('98c929be19fb4598b30233dd1ddbfcfd',)
+[2016-11-02 08:16:46] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'False': False, 'True': True, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x03F24A30>, 'user': <SimpleLazyObject: <User: admin>>, 'request': <WSGIRequest: GET '/admin/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03F08550>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'INFO': 20, 'ERROR': 40, 'WARNING': 30, 'DEBUG': 10}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x03F3B540>>}, {}, {'has_permission': True, 'available_apps': [{'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08F30>, 'object_name': 'Group', 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7C50>, 'object_name': 'Permission', 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}], 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F241B0>, 'has_module_perms': True, 'app_url': '/admin/auth/', 'app_label': 'auth'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7CB0>, 'object_name': 'HierarchyType', 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08670>, 'object_name': 'Hierarchy', 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08C50>, 'object_name': 'Menu', 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7C70>, 'object_name': 'Person', 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08A10>, 'object_name': 'UserHierarchyGroup', 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08770>, 'object_name': 'UserHierarchyPermission', 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7D30>, 'object_name': 'User', 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}], 'name': 'Auths', 'has_module_perms': True, 'app_url': '/admin/auths/', 'app_label': 'auths'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Autores', 'object_name': 'Autor', 'admin_url': '/admin/catalogo/autor/', 'add_url': '/admin/catalogo/autor/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Categorias', 'object_name': 'Categoria', 'admin_url': '/admin/catalogo/categoria/', 'add_url': '/admin/catalogo/categoria/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Libros', 'object_name': 'Libro', 'admin_url': '/admin/catalogo/libro/', 'add_url': '/admin/catalogo/libro/add/'}], 'name': 'Catalogo', 'has_module_perms': True, 'app_url': '/admin/catalogo/', 'app_label': 'catalogo'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7590>, 'object_name': 'ContentType', 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}], 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F24210>, 'has_module_perms': True, 'app_url': '/admin/contenttypes/', 'app_label': 'contenttypes'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7C90>, 'object_name': 'AccessToken', 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F089F0>, 'object_name': 'Application', 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08B70>, 'object_name': 'Grant', 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08970>, 'object_name': 'RefreshToken', 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}], 'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'app_url': '/admin/oauth2_provider/', 'app_label': 'oauth2_provider'}], 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F17B90>, 'LANGUAGE_BIDI': False, 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F17C90>, 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F17C50>, 'app_list': [{'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F088F0>, 'object_name': 'Group', 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08530>, 'object_name': 'Permission', 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}], 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F241B0>, 'has_module_perms': True, 'app_url': '/admin/auth/', 'app_label': 'auth'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08690>, 'object_name': 'HierarchyType', 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08370>, 'object_name': 'Hierarchy', 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08D90>, 'object_name': 'Menu', 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F080F0>, 'object_name': 'Person', 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08910>, 'object_name': 'UserHierarchyGroup', 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08890>, 'object_name': 'UserHierarchyPermission', 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08F50>, 'object_name': 'User', 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}], 'name': 'Auths', 'has_module_perms': True, 'app_url': '/admin/auths/', 'app_label': 'auths'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Autores', 'object_name': 'Autor', 'admin_url': '/admin/catalogo/autor/', 'add_url': '/admin/catalogo/autor/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Categorias', 'object_name': 'Categoria', 'admin_url': '/admin/catalogo/categoria/', 'add_url': '/admin/catalogo/categoria/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Libros', 'object_name': 'Libro', 'admin_url': '/admin/catalogo/libro/', 'add_url': '/admin/catalogo/libro/add/'}], 'name': 'Catalogo', 'has_module_perms': True, 'app_url': '/admin/catalogo/', 'app_label': 'catalogo'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08750>, 'object_name': 'ContentType', 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}], 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F24210>, 'has_module_perms': True, 'app_url': '/admin/contenttypes/', 'app_label': 'contenttypes'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08610>, 'object_name': 'AccessToken', 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08510>, 'object_name': 'Application', 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08A90>, 'object_name': 'Grant', 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08870>, 'object_name': 'RefreshToken', 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}], 'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'app_url': '/admin/oauth2_provider/', 'app_label': 'oauth2_provider'}], 'LANGUAGE_CODE': 'en-us', 'site_url': '/'}]"
+[2016-11-02 08:16:46] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\vemo_vent\ve_vemo\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'False': False, 'True': True, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x03F24A30>, 'user': <SimpleLazyObject: <User: admin>>, 'request': <WSGIRequest: GET '/admin/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03F08550>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'INFO': 20, 'ERROR': 40, 'WARNING': 30, 'DEBUG': 10}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x03F3B540>>}, {}, {'has_permission': True, 'available_apps': [{'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08F30>, 'object_name': 'Group', 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7C50>, 'object_name': 'Permission', 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}], 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F241B0>, 'has_module_perms': True, 'app_url': '/admin/auth/', 'app_label': 'auth'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7CB0>, 'object_name': 'HierarchyType', 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08670>, 'object_name': 'Hierarchy', 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08C50>, 'object_name': 'Menu', 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7C70>, 'object_name': 'Person', 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08A10>, 'object_name': 'UserHierarchyGroup', 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08770>, 'object_name': 'UserHierarchyPermission', 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7D30>, 'object_name': 'User', 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}], 'name': 'Auths', 'has_module_perms': True, 'app_url': '/admin/auths/', 'app_label': 'auths'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Autores', 'object_name': 'Autor', 'admin_url': '/admin/catalogo/autor/', 'add_url': '/admin/catalogo/autor/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Categorias', 'object_name': 'Categoria', 'admin_url': '/admin/catalogo/categoria/', 'add_url': '/admin/catalogo/categoria/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Libros', 'object_name': 'Libro', 'admin_url': '/admin/catalogo/libro/', 'add_url': '/admin/catalogo/libro/add/'}], 'name': 'Catalogo', 'has_module_perms': True, 'app_url': '/admin/catalogo/', 'app_label': 'catalogo'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7590>, 'object_name': 'ContentType', 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}], 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F24210>, 'has_module_perms': True, 'app_url': '/admin/contenttypes/', 'app_label': 'contenttypes'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03EF7C90>, 'object_name': 'AccessToken', 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F089F0>, 'object_name': 'Application', 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08B70>, 'object_name': 'Grant', 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08970>, 'object_name': 'RefreshToken', 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}], 'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'app_url': '/admin/oauth2_provider/', 'app_label': 'oauth2_provider'}], 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F17B90>, 'LANGUAGE_BIDI': False, 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F17C90>, 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F17C50>, 'app_list': [{'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F088F0>, 'object_name': 'Group', 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08530>, 'object_name': 'Permission', 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}], 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F241B0>, 'has_module_perms': True, 'app_url': '/admin/auth/', 'app_label': 'auth'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08690>, 'object_name': 'HierarchyType', 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08370>, 'object_name': 'Hierarchy', 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08D90>, 'object_name': 'Menu', 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F080F0>, 'object_name': 'Person', 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08910>, 'object_name': 'UserHierarchyGroup', 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08890>, 'object_name': 'UserHierarchyPermission', 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08F50>, 'object_name': 'User', 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}], 'name': 'Auths', 'has_module_perms': True, 'app_url': '/admin/auths/', 'app_label': 'auths'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Autores', 'object_name': 'Autor', 'admin_url': '/admin/catalogo/autor/', 'add_url': '/admin/catalogo/autor/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Categorias', 'object_name': 'Categoria', 'admin_url': '/admin/catalogo/categoria/', 'add_url': '/admin/catalogo/categoria/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': 'Libros', 'object_name': 'Libro', 'admin_url': '/admin/catalogo/libro/', 'add_url': '/admin/catalogo/libro/add/'}], 'name': 'Catalogo', 'has_module_perms': True, 'app_url': '/admin/catalogo/', 'app_label': 'catalogo'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08750>, 'object_name': 'ContentType', 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}], 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02F24210>, 'has_module_perms': True, 'app_url': '/admin/contenttypes/', 'app_label': 'contenttypes'}, {'models': [{'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08610>, 'object_name': 'AccessToken', 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08510>, 'object_name': 'Application', 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08A90>, 'object_name': 'Grant', 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'perms': {'add': True, 'change': True, 'delete': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03F08870>, 'object_name': 'RefreshToken', 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}], 'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'app_url': '/admin/oauth2_provider/', 'app_label': 'oauth2_provider'}], 'LANGUAGE_CODE': 'en-us', 'site_url': '/'}]"
+[2016-11-02 08:16:46] DEBUG [django.db.backends:89] (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auths_user" ON ("django_admin_log"."user_id" = "auths_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = '98c929be19fb4598b30233dd1ddbfcfd' ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=('98c929be19fb4598b30233dd1ddbfcfd',)
+[2016-11-02 08:18:06] DEBUG [django.db.backends:89] (0.003) SELECT "oauth2_provider_application"."id", "oauth2_provider_application"."client_id", "oauth2_provider_application"."user_id", "oauth2_provider_application"."redirect_uris", "oauth2_provider_application"."client_type", "oauth2_provider_application"."authorization_grant_type", "oauth2_provider_application"."client_secret", "oauth2_provider_application"."name", "oauth2_provider_application"."skip_authorization" FROM "oauth2_provider_application" WHERE "oauth2_provider_application"."client_id" = '1mDR3zdKmNxeMHoqSJfOfX4JBwSvw93zRK2GaZ61'; args=('1mDR3zdKmNxeMHoqSJfOfX4JBwSvw93zRK2GaZ61',)
+[2016-11-02 08:18:06] DEBUG [django.db.backends:89] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."username" = 'admin'; args=('admin',)
+[2016-11-02 08:18:06] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-02 08:18:06] DEBUG [django.db.backends:89] (0.000) INSERT INTO "oauth2_provider_accesstoken" ("user_id", "token", "application_id", "expires", "scope") VALUES ('98c929be19fb4598b30233dd1ddbfcfd', 'tyYI9tH4T4rhIujmzypb3y3KBn9pag', 1, '2016-11-02 23:18:06.356718', 'write read'); args=['98c929be19fb4598b30233dd1ddbfcfd', 'tyYI9tH4T4rhIujmzypb3y3KBn9pag', 1, '2016-11-02 23:18:06.356718', 'write read']
+[2016-11-02 08:18:06] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-02 08:18:06] DEBUG [django.db.backends:89] (0.002) INSERT INTO "oauth2_provider_refreshtoken" ("user_id", "token", "application_id", "access_token_id") VALUES ('98c929be19fb4598b30233dd1ddbfcfd', 'Sk2ZcB3WsEv668DcaQa80BwFLastIs', 1, 21); args=['98c929be19fb4598b30233dd1ddbfcfd', 'Sk2ZcB3WsEv668DcaQa80BwFLastIs', 1, 21]
+[2016-11-02 08:18:19] DEBUG [django.db.backends:89] (0.001) SELECT "oauth2_provider_application"."id", "oauth2_provider_application"."client_id", "oauth2_provider_application"."user_id", "oauth2_provider_application"."redirect_uris", "oauth2_provider_application"."client_type", "oauth2_provider_application"."authorization_grant_type", "oauth2_provider_application"."client_secret", "oauth2_provider_application"."name", "oauth2_provider_application"."skip_authorization" FROM "oauth2_provider_application" WHERE "oauth2_provider_application"."client_id" = '1mDR3zdKmNxeMHoqSJfOfX4JBwSvw93zRK2GaZ61'; args=('1mDR3zdKmNxeMHoqSJfOfX4JBwSvw93zRK2GaZ61',)
+[2016-11-02 08:18:19] DEBUG [django.db.backends:89] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."username" = 'admin'; args=('admin',)
+[2016-11-02 08:18:19] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-02 08:18:19] DEBUG [django.db.backends:89] (0.000) INSERT INTO "oauth2_provider_accesstoken" ("user_id", "token", "application_id", "expires", "scope") VALUES ('98c929be19fb4598b30233dd1ddbfcfd', 'O3vk3yrhoxVkpXDijVs0sYjsJMf5CI', 1, '2016-11-02 23:18:19.171170', 'write read'); args=['98c929be19fb4598b30233dd1ddbfcfd', 'O3vk3yrhoxVkpXDijVs0sYjsJMf5CI', 1, '2016-11-02 23:18:19.171170', 'write read']
+[2016-11-02 08:18:19] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-02 08:18:19] DEBUG [django.db.backends:89] (0.001) INSERT INTO "oauth2_provider_refreshtoken" ("user_id", "token", "application_id", "access_token_id") VALUES ('98c929be19fb4598b30233dd1ddbfcfd', 'HQbCbi0KP5zFcXwe2m1qLoHGkGq2EB', 1, 22); args=['98c929be19fb4598b30233dd1ddbfcfd', 'HQbCbi0KP5zFcXwe2m1qLoHGkGq2EB', 1, 22]
+[2016-11-02 08:21:09] DEBUG [django.db.backends:89] (0.001) SELECT "oauth2_provider_application"."id", "oauth2_provider_application"."client_id", "oauth2_provider_application"."user_id", "oauth2_provider_application"."redirect_uris", "oauth2_provider_application"."client_type", "oauth2_provider_application"."authorization_grant_type", "oauth2_provider_application"."client_secret", "oauth2_provider_application"."name", "oauth2_provider_application"."skip_authorization" FROM "oauth2_provider_application" WHERE "oauth2_provider_application"."client_id" = '1mDR3zdKmNxeMHoqSJfOfX4JBwSvw93zRK2GaZ61'; args=('1mDR3zdKmNxeMHoqSJfOfX4JBwSvw93zRK2GaZ61',)
+[2016-11-02 08:21:09] DEBUG [django.db.backends:89] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."username" = 'admin'; args=('admin',)
+[2016-11-02 08:21:15] DEBUG [django.db.backends:89] (0.000) SELECT "oauth2_provider_application"."id", "oauth2_provider_application"."client_id", "oauth2_provider_application"."user_id", "oauth2_provider_application"."redirect_uris", "oauth2_provider_application"."client_type", "oauth2_provider_application"."authorization_grant_type", "oauth2_provider_application"."client_secret", "oauth2_provider_application"."name", "oauth2_provider_application"."skip_authorization" FROM "oauth2_provider_application" WHERE "oauth2_provider_application"."client_id" = '1mDR3zdKmNxeMHoqSJfOfX4JBwSvw93zRK2GaZ61'; args=('1mDR3zdKmNxeMHoqSJfOfX4JBwSvw93zRK2GaZ61',)
+[2016-11-02 08:21:15] DEBUG [django.db.backends:89] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."username" = 'admin'; args=('admin',)
+[2016-11-02 08:21:15] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-02 08:21:15] DEBUG [django.db.backends:89] (0.001) INSERT INTO "oauth2_provider_accesstoken" ("user_id", "token", "application_id", "expires", "scope") VALUES ('98c929be19fb4598b30233dd1ddbfcfd', 'Ofawe7QASzPNxhrbVAl2wYKhv8FiRw', 1, '2016-11-02 23:21:15.452014', 'write read'); args=['98c929be19fb4598b30233dd1ddbfcfd', 'Ofawe7QASzPNxhrbVAl2wYKhv8FiRw', 1, '2016-11-02 23:21:15.452014', 'write read']
+[2016-11-02 08:21:15] DEBUG [django.db.backends:89] (0.001) BEGIN; args=None
+[2016-11-02 08:21:15] DEBUG [django.db.backends:89] (0.001) INSERT INTO "oauth2_provider_refreshtoken" ("user_id", "token", "application_id", "access_token_id") VALUES ('98c929be19fb4598b30233dd1ddbfcfd', 'N4b30rSoLSv9okEiY0M7xQP67uY3u0', 1, 23); args=['98c929be19fb4598b30233dd1ddbfcfd', 'N4b30rSoLSv9okEiY0M7xQP67uY3u0', 1, 23]
